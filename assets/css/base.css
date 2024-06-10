@@ -1,0 +1,296 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #222;
+    --primary-light-color: #d8f5cc;
+    --primary-color: #5db935bb;
+    --primary-bold-color: #379e0a;
+    --primary-bolder-color: #226c02;
+
+    /* Header */
+    --header-height: 9.4rem;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.mt-4 {
+    margin-top: 4px;
+}
+
+.mt-6 {
+    margin-top: 6px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-12 {
+    margin-top: 12px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mt-48 {
+    margin-top: 48px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mr-4 {
+    margin-right: 4px;
+}
+
+.mr--80 {
+    margin-right: -80px;
+}
+
+.ml-80 {
+    margin-left: 80px;
+}
+
+.ml-6 {
+    margin-left: 6px;
+}
+
+.ml-12 {
+    margin-left: 12px;
+}
+
+.mlr-4 {
+    margin: 0 4px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pr-24 {
+    padding-right: 24px;
+}
+
+.ptb-12 {
+    padding: 12px 0;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-reverse {
+    flex-direction: row-reverse;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.align-end {
+    align-items: end;
+}
+
+.f-right {
+    float: right;
+}
+
+.f-left {
+    float: left;
+}
+
+.fsz-14 {
+    font-size: 14px;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-start {
+    text-align: start;
+}
+
+/* Button */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem 5rem;
+    border-radius: 50px;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 400;
+    box-shadow: inset 0 0 0 2px var(--primary-bold-color);
+    background-color: var(--white-color);
+    color: var(--text-color);
+    transition: all 150ms ease-in-out;
+}
+
+.btn.solid-btn {
+    box-shadow: unset;
+    background-color: var(--primary-bold-color);
+    color: var(--white-color);
+}
+
+.btn:hover {
+    box-shadow: unset;
+    background-color: var(--primary-color);
+}
+
+.btn.solid-btn:hover {
+    background-color: var(--primary-bolder-color);
+}
+
+.btn.btn--disabled {
+    cursor: default;
+    opacity: .5;
+}
+
+/* Heading */
+.body-heading {
+    font-size: 4.4rem;
+    font-weight: 500;
+    line-height: 6.2rem;
+    margin-top: 1.6rem;
+}
+
+.sub-heading {
+    color: var(--primary-bold-color);
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+}
+
+.body-heading span {
+    color: var(--primary-bold-color);
+}
+
+/* Food Tag */
+.food-tag {
+    display: inline-block;
+    padding: .6rem 1.2rem;
+    border-radius: 50px;
+    margin: 0 .5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-wrap: nowrap;
+    text-transform: uppercase;
+}
+
+.food-tag.small {
+    padding: .3rem 1rem;
+    margin: 0 .3rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.food-tag:first-child {
+    margin-left: unset;
+}
+
+.food-tag:last-child {
+    margin-right: unset;
+}
+
+.lactose {
+    background: #e8c2d4;
+}
+
+.vegan {
+    background: #64dc77;
+}
+
+.keto {
+    background: #cec99e;
+}
+
+.paleo {
+    background: #eed374;
+}
+
+.gluten {
+    background: #d7beff;
+}
+
+.vegetarian {
+    background: #82ae8e;
+}
+
+.kid {
+    background: #f39f52;
+}
+
+.fodmap {
+    background: #ffa9a9;
+}
+
+.pesca {
+    background: #c2e1e8;
+}
+
+/* Slide Scrolling Animation */
+@keyframes slideScrolling {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* New Effect */
+@keyframes newEffect {
+    from {
+        top: var(--top-1);
+    }
+
+    to {
+        top: var(--top-2);
+    }
+}

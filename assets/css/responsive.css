@@ -1,0 +1,152 @@
+/* Mobile and tablet */
+@media (max-width: 63.96875em) {}
+
+/* Mobile, tablet and S PC */
+@media (max-width: 77.46875em) {
+    .body-heading {
+        font-size: 3.8rem;
+        line-height: 4.8rem;
+        margin-top: 2rem;
+    }
+
+    .sub-heading {
+        font-size: 2.4rem;
+        line-height: 2rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 47.96875em) {}
+
+/* L Mobile: width > 375px and width <= 425px (min-width: 376px) and (max-width: 426px) */
+@media (min-width: 23.5em) and (max-width: 26.625em) {}
+
+/* M Mobile: width > 320px and width <= 375px (min-width: 321px) and (max-width: 376px) */
+@media (min-width: 20.0625em) and (max-width: 23.5em) {}
+
+/* S Mobile: width <= 320px (max-width: 321px) */
+@media (max-width: 20.0625em) {}
+
+/* Tablet */
+@media (min-width: 48em) and (max-width: 63.96875em) {}
+
+/* S PC */
+@media (min-width: 64em) and (max-width: 77.46875em) {
+    .btn {
+        padding: 1rem 3rem;
+        font-size: 1.6rem;
+    }
+
+    .header__logo {
+        height: 2.4rem;
+    }
+
+    .header__nav-list {
+        font-size: 1.6rem;
+        padding: 1.2rem 1.8rem;
+    }
+
+    .header__nav-link {
+        padding: 0.9rem 1.4rem;
+    }
+
+    .section-hero {
+        padding-top: 0;
+    }
+
+    .hero-group {
+        padding: 0 1.8rem 1.2rem;
+    }
+
+    .hero-heading {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    .hero-description {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+
+    .hero-img {
+        width: 100%;
+        margin-left: 1.2rem;
+    }
+
+    .featured-logos {
+        justify-content: space-evenly;
+        height: 10rem;
+    }
+
+    .featured-logos img {
+        height: 2.4rem;
+    }
+
+    .section-how {
+        max-width: 840px;
+    }
+
+    .meal-card-overview {
+        max-width: 740px;
+    }
+
+    .meal-card-overview .col {
+        margin-bottom: 18px;
+    }
+
+    .section-testimonials {
+        padding: 0 8rem;
+    }
+
+    .testimonials-details {
+        margin-bottom: 2rem;
+    }
+
+    .gallery {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    .s-device-order-1 {
+        order: 1;
+    }
+
+    .section-pricing {
+        padding: 1.2rem;
+    }
+
+    .pricing-list {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        padding-left: 2.8rem;
+    }
+
+    .footer-links {
+        font-size: 1.2rem;
+    }
+
+    .footer-links li {
+        font-size: 1.2rem;
+    }
+
+    .footer-links li a {
+        font-size: 1.4rem;
+    }
+
+    .footer-info-desc {
+        font-size: 1rem;
+    }
+}
+
+/* Big Screen */
+@media (min-width: 124.9375em) {
+    .app {
+        display: none;
+    }
+
+    .not-supported {
+        display: flex;
+    }
+}
