@@ -168,6 +168,7 @@ body {
     background-color: var(--white-color);
     color: var(--text-color);
     transition: all 150ms ease-in-out;
+    white-space: nowrap;
 }
 
 .btn.solid-btn {

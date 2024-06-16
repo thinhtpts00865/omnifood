@@ -20,8 +20,6 @@
     box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);
 }
 
-.header__logo-link {}
-
 .header__logo {
     display: block;
     height: 3.4rem;
@@ -37,9 +35,8 @@
     background-color: var(--primary-light-color);
 }
 
-.header__nav-item {}
-
 .header__nav-link {
+    white-space: nowrap;
     padding: 1rem 1.4rem;
     color: var(--text-color);
     transition: all 150ms ease-in-out;
@@ -107,8 +104,6 @@
 .hero-marquee:hover .marquee-track {
     animation-play-state: paused;
 }
-
-.hero-button {}
 
 .hero-button a {
     margin-right: 2rem;
@@ -432,8 +427,6 @@
     filter: opacity(1);
 }
 
-.testimonials {}
-
 .testimonials .sub-heading {
     margin: 0;
     line-height: 3rem;
@@ -480,15 +473,13 @@
     margin-right: 12px;
 }
 
-.testimonials-wrapper {}
-
 .testimonials-stars {
     font-size: 1.5rem;
     color: #ccc;
 }
 
 .testimonials-stars .half-star {
-    background: linear-gradient(90deg, var(--primary-bold-color) 50%, #ccc 50%);
+    background: linear-gradient(-90deg, #ccc 50%, var(--primary-bold-color) 50%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -558,7 +549,7 @@
     content: '';
     position: absolute;
     background: rgba(42, 137, 0, 0.54);
-    top: 8%;
+    top: 8.2%;
     left: 2.1%;
     right: 0;
     bottom: 0;
@@ -569,7 +560,7 @@
 }
 
 #toggle:checked+.toggle-wrapper:before {
-    transform: translateX(100%);
+    transform: translateX(102%);
     width: 10.3rem;
 }
 
@@ -590,7 +581,7 @@
 
 .toggle-wrapper p:last-child {
     color: var(--black-color);
-    max-width: 109px;
+    max-width: 110px;
     cursor: pointer;
 }
 
@@ -810,8 +801,6 @@
     display: flex;
 }
 
-#form-subscribe-element {}
-
 .subscribe-form input,
 .subscribe-form select,
 .subscribe-btn {
@@ -904,7 +893,8 @@
     text-decoration: underline;
 }
 
-.not-supported {
+.not-supported-big,
+.not-supported-small {
     display: none;
     justify-content: center;
     align-items: center;
@@ -913,7 +903,8 @@
     background: linear-gradient(180deg, rgba(196, 232, 180, 0.43) -50%, rgba(216, 245, 204, 0) 99%);
 }
 
-.not-supported h3 {
+.not-supported-big h3,
+.not-supported-small h3 {
     font-size: 2.4vw;
     line-height: 4vw;
 }
